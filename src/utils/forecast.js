@@ -24,9 +24,9 @@ const forecast = (longitude, latitude, callback) => {
         location: location.name,
         message: `${current.weather_descriptions[0]} . It is currently ${
           current.temperature
-        } degrees outside . There is  ${
-          current.precip
-        }% chance of rain. Also it is ${
+        } degrees outside .Humidity over here is ${
+          current.humidity
+        } There is  ${current.precip}% chance of rain. Also it is ${
           current.is_day == "no" ? "night" : "day"
         } over here.`,
       });
